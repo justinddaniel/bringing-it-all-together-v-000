@@ -27,7 +27,8 @@ class Dog
 
   def save
     if self.id
-  self.update
+      #self.update
+      nil
     else
       sql = <<-SQL
       INSERT INTO students (name, grade) VALUES (?, ?)
