@@ -26,9 +26,6 @@ class Dog
   end
 
   def save
-    if self.class !== Dog
-      self = Dog.new
-    end
     if self.id
       self.update
     else
