@@ -53,6 +53,13 @@ class Dog
     dog
   end
 
+  def self.new_from_db(row)
+    new_dog = Dog.new(nil, nil, nil) #must instantiate with placeholder arguments, then set attributes next 3 lines.
+    new_dog.id = row[0]
+    new_dog.name = row[1]
+    new_dog.breed = row[2]
+    new_dog
+
   def self.find_by_id(i)
     sql = <<-SQL
     SELECT * FROM dogs
