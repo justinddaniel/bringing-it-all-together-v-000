@@ -73,4 +73,10 @@ class Dog
     end.first
   end
 
+  def find_or_create_by
+  end
+
+  def find_by_name
+  end
+
 end
